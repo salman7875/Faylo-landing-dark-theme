@@ -1,0 +1,229 @@
+:root {
+  --intro-blue: hsl(217, 28%, 15%);
+  --main-blue: hsl(218, 28%, 13%);
+  --footer-blue: hsl(216, 53%, 9%);
+  --testimonial-blue: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --red: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--intro-blue);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+header {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 86px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  text-decoration: none;
+  color: var(--white);
+  margin-left: 12px;
+}
+
+nav ul li a:hover {
+  color: var(--blue);
+  transition: 0.3s ease-in-out;
+  box-shadow: 8px 6px 24px var(--cyan);
+}
+
+/* -------------------------- */
+.header-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.illus-1 {
+  height: 400px;
+  margin-bottom: 24px;
+}
+
+.header-container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-container .heading {
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.header-container .header-info {
+  padding: 0 56px;
+  line-height: 1.5;
+  color: var(--white);
+  margin-bottom: 18px;
+}
+
+.header-container .btn-started {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white);
+  padding: 12px 56px;
+  align-self: center;
+  border-radius: 25px;
+  background-color: var(--blue);
+}
+
+.header-container .btn-started:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 8px 6px 24px var(--cyan);
+}
+
+/* ---------- SECTION ---------- */
+.section-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  color: var(--white);
+  column-gap: 86px;
+  row-gap: 86px;
+  margin-bottom: 86px;
+}
+
+.section-grids img {
+  margin-bottom: 12px;
+}
+
+.section-grids .section-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.section-grids .section-info {
+  padding: 0 86px;
+}
+
+/* ---------- MAIN ---------- */
+.main-container {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  padding: 0 86px;
+  margin-bottom: 86px;
+}
+
+.main-container img {
+  width: 500px;
+}
+
+.main-container .main-detail {
+  flex: 1;
+}
+
+.main-detail .main-title {
+  color: var(--white);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  padding-right: 98px;
+  margin-bottom: 12px;
+}
+
+.main-detail .info .main-info {
+  color: var(--white);
+  padding-bottom: 12px;
+}
+
+.main-detail .info {
+  margin-bottom: 18px;
+}
+
+.main-detail a:link,
+.main-detail a:visited {
+  display: inline-block;
+  color: var(--cyan);
+}
+
+.main-detail a:hover {
+  text-decoration: none;
+}
+
+/* .main-detail a .arr {
+  display: inline-block;
+  stroke-width: 10px;
+} */
+
+/* ----------- TESTIMONIALS ----------- */
+.testimonial-container {
+  display: grid;
+  padding: 0 86px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px;
+  margin-bottom: 86px;
+}
+
+.testimonial {
+  background-color: var(--testimonial-blue);
+  box-shadow: rgba(23, 23, 23, 0.48) 6px 2px 16px 0px,
+    rgba(28, 26, 26, 0.8) -6px -2px 16px 0px;
+  padding: 18px;
+}
+
+.testimonial .description {
+  color: var(--white);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  align-items: center;
+}
+
+.inner-container img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.inner-container .name {
+  display: inine-block;
+  margin-left: 12px;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.inner-container .job {
+  font-size: 12px;
+  color: var(--white);
+  margin-left: auto;
+}
